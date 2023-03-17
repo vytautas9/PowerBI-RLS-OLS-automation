@@ -1,0 +1,25 @@
+{
+    "createOrReplace": {
+        "object": {
+            "database": "rls-ols-automation",
+            "role": "US Manager"
+        },
+        "role": {
+            "name": "US Manager",
+            "modelPermission": "read",
+            "tablePermissions": [
+                {
+                    "name": "DimSalesTeritory",
+                    "metadataPermission": "read",
+                    "filterExpression": "[Country] = \"United States\" && [Region] = \"Northwest\""
+                }
+            ],
+            "annotations": [
+                {
+                    "name": "created_by",
+                    "value": "python_script"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "createOrReplace": {
+        "object": {
+            "database": "rls-ols-automation",
+            "role": "DE Manager"
+        },
+        "role": {
+            "name": "DE Manager",
+            "modelPermission": "read",
+            "tablePermissions": [
+                {
+                    "name": "DimCustomer",
+                    "metadataPermission": "read",
+                    "columnPermissions": [
+                        {
+                            "name": "Email Address",
+                            "metadataPermission": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "FactFinance",
+                    "metadataPermission": "none"
+                },
+                {
+                    "name": "DimSalesTeritory",
+                    "metadataPermission": "read",
+                    "filterExpression": "[Country] = \"Germany\""
+                }
+            ],
+            "annotations": [
+                {
+                    "name": "created_by",
+                    "value": "python_script"
+                }
+            ]
+        }
+    }
+}

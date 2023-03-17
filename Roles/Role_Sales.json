@@ -1,0 +1,24 @@
+{
+    "createOrReplace": {
+        "object": {
+            "database": "rls-ols-automation",
+            "role": "Sales"
+        },
+        "role": {
+            "name": "Sales",
+            "modelPermission": "read",
+            "tablePermissions": [
+                {
+                    "name": "FactFinance",
+                    "metadataPermission": "none"
+                }
+            ],
+            "annotations": [
+                {
+                    "name": "created_by",
+                    "value": "python_script"
+                }
+            ]
+        }
+    }
+}

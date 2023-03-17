@@ -1,0 +1,18 @@
+{
+    "createOrReplace": {
+        "object": {
+            "database": "rls-ols-automation",
+            "role": "Headquarters"
+        },
+        "role": {
+            "name": "Headquarters",
+            "modelPermission": "read",
+            "annotations": [
+                {
+                    "name": "created_by",
+                    "value": "python_script"
+                }
+            ]
+        }
+    }
+}
