@@ -54,7 +54,7 @@ def createTablePermissions(tableName, roleRestrictions):
             singleRow = rlsColumns[rlsColumns['RestrictedColumn'] == columnName]
 
             # RLS
-            filterColumnExpression = '['+columnName+']'+' = \"'+singleRow['RestrictedData'].item()+'\"'
+            filterColumnExpression = '['+columnName+']'+' == \"'+singleRow['RestrictedData'].item()+'\"'
             if idx == 0:
                 filterExpression = filterColumnExpression
             else:
