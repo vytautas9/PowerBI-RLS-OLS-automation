@@ -63,7 +63,7 @@ Capacity [XMLA-Read/Write](https://learn.microsoft.com/en-us/power-bi/enterprise
 
 ### Database  
 Central location where security matrix is placed and maintained. In our example, security matrix was made as part of the “AdventureWorksDW2019” local SQL database:
-![Security matrix as part of AdventureWorksDW2019 database](/Images/security-matrix-in-db.png?raw=true "Security matrix")
+![Security matrix as part of AdventureWorksDW2019 database](/Images/security-matrix-in-db.PNG?raw=true "Security matrix")
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,7 +71,7 @@ Central location where security matrix is placed and maintained. In our example,
 
 Python (or any other of your preferred scripting language) is used to actually generate the TMSL script for roles. The main idea is to read the security matrix shown above, process it and output [TMSL role script](https://learn.microsoft.com/en-us/analysis-services/tmsl/roles-object-tmsl?view=asallproducts-allversions) which can be used to deploy the roles directly to Power BI dataset through XMLA endpoint.  
 An example below shows the security matrix (on the left) with 1 role highlighted (having 3 rows, 1 for RLS and 2 for OLS). Out of those 3 highlighted rows, a TMSL script (on the right) has been generated to create a role with such rules in our Power BI dataset.  
-![From security matrix to TMSL script using Python](/Images/Python%20To%20TMSL.png?raw=true "From security matrix to TMSL script using Python")  
+![From security matrix to TMSL script using Python](/Images/Python%20to%20TMSL.png?raw=true "From security matrix to TMSL script using Python")  
 In this example, for each role we generate a separate JSON TMSL script.  
 
 Before executing [rls-ols-automation.py](rls-ols-automation.py) python script, you need to set up environment variables. This can be done by creating an txt file named ".env" with:
