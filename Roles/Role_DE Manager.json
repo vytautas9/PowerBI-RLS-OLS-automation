@@ -23,9 +23,9 @@
                     "metadataPermission": "none"
                 },
                 {
-                    "name": "DimSalesTeritory",
+                    "name": "DimSalesTerritory",
                     "metadataPermission": "read",
-                    "filterExpression": "[Country] = \"Germany\""
+                    "filterExpression": "[Country] == \"Germany\""
                 }
             ],
             "annotations": [

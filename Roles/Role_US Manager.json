@@ -9,9 +9,9 @@
             "modelPermission": "read",
             "tablePermissions": [
                 {
-                    "name": "DimSalesTeritory",
+                    "name": "DimSalesTerritory",
                     "metadataPermission": "read",
-                    "filterExpression": "[Country] = \"United States\" && [Region] = \"Northwest\""
+                    "filterExpression": "[Country] == \"United States\" && [Region] == \"Northwest\""
                 }
             ],
             "annotations": [
